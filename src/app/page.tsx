@@ -410,23 +410,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. INTERACTIVE BEFORE / AFTER COMPARISON */}
-      <section className="bg-slate-50 py-16 border-y border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 text-center">
-          <div>
-            <span className="text-xs font-bold text-primary uppercase tracking-widest bg-white px-3 py-1 rounded-full border border-slate-200">
-              Visual Transformation
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">
-              See The Dramatic Difference
-            </h2>
-            <p className="text-slate-600 text-sm max-w-xl mx-auto mt-2">
-              Drag the interactive slider to compare an open balcony exposed to pigeons and fall hazards vs. the pristine view with ModerNet SS316 protection.
-            </p>
-          </div>
-
-          <BeforeAfterSlider />
-        </div>
+      {/* 5. BEFORE & AFTER GALLERY (SEEING IS BELIEVING) */}
+      <section id="gallery" className="relative bg-[#1c382f] py-16 sm:py-24 overflow-hidden">
+        <BeforeAfterSlider />
       </section>
 
       {/* 6. ADVANTAGES / WHY CHOOSE MODERNET */}
