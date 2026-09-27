@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Phone, Menu, X, Shield, Calendar } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import InspectionModal from "./InspectionModal";
 
 export default function Navbar() {
@@ -31,49 +31,21 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Top Banner */}
-      <div className="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-          <div className="flex items-center gap-4 text-center sm:text-left">
-            <span className="flex items-center gap-1.5 text-sky-400 font-medium">
-              <Shield className="w-3.5 h-3.5" /> Mumbai & Navi Mumbai Official Safety Partner
-            </span>
-            <span className="hidden md:inline text-slate-500">•</span>
-            <span className="hidden md:inline text-slate-400">ISO Standard SS316 Marine Grade Cables</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <a
-              href="tel:+919700099235"
-              className="flex items-center gap-1.5 hover:text-white transition-colors"
-            >
-              <Phone className="w-3.5 h-3.5 text-primary-light" />
-              <span>+91 97000 99235</span>
-            </a>
-            <Link
-              href="/admin/login"
-              className="text-slate-400 hover:text-sky-300 transition-colors hidden sm:inline"
-            >
-              Staff Portal
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* Main Floating Header */}
-      <header
-        className={`sticky top-0 z-40 transition-all duration-300 ${
-          isScrolled
-            ? "bg-white/95 backdrop-blur-md shadow-md py-3"
-            : "bg-white/90 backdrop-blur-sm py-4 border-b border-slate-100"
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative h-10 w-36 sm:w-44 flex items-center">
+      {/* Floating Pill Header */}
+      <header className="fixed top-4 sm:top-5 left-1/2 -translate-x-1/2 z-50 w-[94%] max-w-[1200px] pointer-events-none transition-all duration-300">
+        <div
+          className={`pointer-events-auto w-full bg-white rounded-full px-5 sm:px-8 py-2 sm:py-2.5 flex items-center justify-between transition-all duration-300 ${
+            isScrolled
+              ? "shadow-[0_16px_40px_rgba(0,0,0,0.18)]"
+              : "shadow-[0_14px_40px_rgba(0,0,0,0.12)]"
+          }`}
+        >
+          {/* Brand Logo */}
+          <Link href="/" className="flex items-center shrink-0">
+            <div className="relative h-8 sm:h-9 w-32 sm:w-36">
               <Image
                 src="/img/modernet_logo1.jpeg"
-                alt="ModerNet Invisible Grills & Bird Netting"
+                alt="ModerNet"
                 fill
                 priority
                 className="object-contain object-left"
@@ -81,91 +53,81 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          {/* Center Navigation Links (Desktop) */}
+          <nav className="hidden lg:flex items-center gap-7">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`text-sm font-medium transition-colors relative py-1 ${
+                  className={`text-[15px] font-medium transition-colors relative py-1 ${
                     isActive
-                      ? "text-primary font-semibold"
-                      : "text-slate-700 hover:text-primary"
+                      ? "text-[#1d7caf] font-semibold border-b-2 border-[#1d7caf]"
+                      : "text-slate-800 hover:text-[#1d7caf]"
                   }`}
                 >
                   {link.name}
-                  {isActive && (
-                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary rounded-full" />
-                  )}
                 </Link>
               );
             })}
           </nav>
 
-          {/* Action CTAs */}
-          <div className="hidden lg:flex items-center gap-4">
+          {/* Right CTA Button */}
+          <div className="hidden sm:flex items-center gap-3">
             <button
               onClick={() => setIsModalOpen(true)}
-              className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5"
+              className="bg-[#1d7caf] hover:bg-[#166088] text-white text-sm font-semibold px-6 py-2.5 rounded-full transition-all duration-200 shadow-sm hover:shadow cursor-pointer"
             >
-              <Calendar className="w-4 h-4" />
-              <span>Free Inspection</span>
+              Free Inspection
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="flex items-center gap-2 md:hidden">
+          {/* Mobile Actions */}
+          <div className="flex lg:hidden items-center gap-2">
             <button
               onClick={() => setIsModalOpen(true)}
-              className="bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full"
+              className="sm:hidden bg-[#1d7caf] text-white text-xs font-semibold px-3.5 py-1.5 rounded-full"
             >
               Free Visit
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none"
-              aria-label="Toggle Menu"
+              className="p-1.5 rounded-full text-slate-800 hover:bg-slate-100 transition-colors"
+              aria-label="Toggle navigation"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
 
-        {/* Mobile Dropdown */}
+        {/* Mobile Dropdown Menu */}
         {isOpen && (
-          <div className="md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 animate-in fade-in slide-in-from-top-2">
+          <div className="pointer-events-auto lg:hidden mt-2 bg-white rounded-2xl p-4 shadow-xl border border-slate-100 space-y-2 animate-in fade-in slide-in-from-top-2">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`block px-3 py-2 rounded-md text-base font-medium ${
+                className={`block px-4 py-2.5 rounded-xl text-sm font-medium transition-colors ${
                   pathname === link.href
-                    ? "bg-sky-50 text-primary font-semibold"
+                    ? "bg-sky-50 text-[#1d7caf] font-bold"
                     : "text-slate-700 hover:bg-slate-50"
                 }`}
               >
                 {link.name}
               </Link>
             ))}
-            <div className="pt-2 border-t border-slate-100 flex flex-col gap-2">
+            <div className="pt-2 border-t border-slate-100">
               <button
                 onClick={() => {
                   setIsOpen(false);
                   setIsModalOpen(true);
                 }}
-                className="w-full text-center bg-primary hover:bg-primary-dark text-white py-2.5 rounded-lg text-sm font-semibold shadow-sm"
+                className="w-full bg-[#1d7caf] hover:bg-[#166088] text-white text-sm font-semibold py-2.5 rounded-xl shadow-sm transition-all"
               >
-                Book Free Site Inspection
+                Free Inspection
               </button>
-              <a
-                href="tel:+919700099235"
-                className="flex items-center justify-center gap-2 text-center text-slate-700 border border-slate-300 py-2 rounded-lg text-sm font-medium"
-              >
-                <Phone className="w-4 h-4 text-primary" /> +91 97000 99235
-              </a>
             </div>
           </div>
         )}
