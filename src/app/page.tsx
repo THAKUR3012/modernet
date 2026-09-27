@@ -5,13 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   Shield,
-  CheckCircle2,
   Phone,
   ArrowRight,
   Eye,
   Flame,
-  Award,
-  Clock,
   MapPin,
   Star,
   ChevronRight,
@@ -205,124 +202,93 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Feature Highlights Bar */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 sm:-mt-10 relative z-20">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="bg-white/95 backdrop-blur-md border border-slate-200/80 p-4 rounded-2xl shadow-lg flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-sky-50 text-[#1d7caf] flex items-center justify-center shrink-0">
-              <Shield className="w-5 h-5" />
-            </div>
-            <div>
-              <p className="text-xs font-bold text-slate-900">SS 316 Grade</p>
-              <p className="text-[11px] text-slate-500">100% Anti-Rust</p>
-            </div>
-          </div>
+      {/* 2. ABOUT US SECTION */}
+      <section id="about" className="bg-[#fcfbfa] py-20 lg:py-28 border-t border-slate-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+            
+            {/* Left Column: Image Card */}
+            <div className="lg:col-span-6 relative">
+              <div className="relative bg-white p-3.5 rounded-[2rem] shadow-[0_1.5rem_3rem_rgba(15,23,42,0.08)] overflow-hidden aspect-square max-w-[480px] mx-auto border border-slate-100/80">
+                <div className="relative w-full h-full rounded-[1.65rem] overflow-hidden">
+                  <Image
+                    src="/img/Birdnetting/Image-02.jpg"
+                    alt="Modern Safety, Installed with Care"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
 
-          <div className="bg-white/95 backdrop-blur-md border border-slate-200/80 p-4 rounded-2xl shadow-lg flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
-              <Award className="w-5 h-5" />
-            </div>
-            <div>
-              <p className="text-xs font-bold text-slate-900">600 KG Breaking</p>
-              <p className="text-[11px] text-slate-500">High Tensile Wire</p>
-            </div>
-          </div>
+                {/* Bottom-left Badge */}
+                <div className="absolute left-6 bottom-6 bg-white rounded-2xl px-5 py-3.5 shadow-[0_0.75rem_1.5rem_rgba(15,23,42,0.1)] z-10 border border-slate-50">
+                  <span className="block text-2xl font-extrabold text-[#1d7caf] leading-none mb-1">
+                    New
+                  </span>
+                  <span className="block text-[10px] font-bold tracking-[0.08em] text-slate-500 uppercase">
+                    MODERN SAFETY PARTNER
+                  </span>
+                </div>
 
-          <div className="bg-white/95 backdrop-blur-md border border-slate-200/80 p-4 rounded-2xl shadow-lg flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center shrink-0">
-              <Flame className="w-5 h-5" />
+                {/* Bottom-right Decorative Glow */}
+                <span
+                  className="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-[#dfe7e0] opacity-60 pointer-events-none z-0"
+                  aria-hidden="true"
+                />
+              </div>
             </div>
-            <div>
-              <p className="text-xs font-bold text-slate-900">Fire Evacuation</p>
-              <p className="text-[11px] text-slate-500">Emergency Safe</p>
-            </div>
-          </div>
 
-          <div className="bg-white/95 backdrop-blur-md border border-slate-200/80 p-4 rounded-2xl shadow-lg flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
-              <Clock className="w-5 h-5" />
-            </div>
-            <div>
-              <p className="text-xs font-bold text-slate-900">5-Year Warranty</p>
-              <p className="text-[11px] text-slate-500">Free Site Visit</p>
-            </div>
-          </div>
-        </div>
-      </section>
+            {/* Right Column: Content */}
+            <div className="lg:col-span-6 space-y-5">
+              <span className="text-[13px] font-semibold tracking-[0.18em] text-[#64748b] uppercase block">
+                ABOUT US
+              </span>
 
-      {/* 2. ABOUT US PREVIEW */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Image */}
-          <div className="lg:col-span-6 relative">
-            <div className="relative h-[420px] sm:h-[480px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-              <Image
-                src="/img/Birdnetting/Image-02.jpg"
-                alt="Elegant balcony protection view"
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent" />
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-slate-100 flex items-center justify-between">
+              <h2 className="font-playfair text-3xl sm:text-4xl lg:text-[42px] font-bold text-slate-900 leading-[1.18]">
+                Modern Safety, Installed with<br className="hidden sm:inline" /> Care
+              </h2>
+
+              <p className="text-slate-500 text-[15px] leading-relaxed">
+                ModerNet Pvt. Ltd. is a newly established company offering complete safety solutions for residential, commercial and construction requirements. We provide high-quality installation of Invisible Grills, Mosquito Nets, Motorized Mosquito Mesh (Zip Screens), Bird Nets and Construction Safety Nets.
+              </p>
+
+              <p className="text-slate-500 text-[15px] leading-relaxed">
+                Our focus is on clean installation, branded materials, modern safety systems and reliable service. We aim to build long-term trust through professional execution, safety compliance and after-sales support.
+              </p>
+
+              {/* Company Directors */}
+              <div className="pt-2">
+                <h3 className="text-xs font-bold tracking-[0.12em] text-[#1d7caf] uppercase mb-2">
+                  COMPANY DIRECTORS
+                </h3>
+                <div className="grid grid-cols-2 gap-4 text-sm font-medium text-slate-700">
+                  <div>Mr. Atul Adhav</div>
+                  <div>Mr. Satnam Singh Sagoo</div>
+                </div>
+              </div>
+
+              {/* Highlights: What We Deliver & How We Build Trust */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
                 <div>
-                  <span className="text-xs font-semibold text-primary uppercase tracking-wider">New</span>
-                  <h4 className="font-bold text-slate-900 text-base">Modern Safety Partner</h4>
-                  <p className="text-xs text-slate-500">Residential, Commercial & Construction</p>
+                  <h3 className="text-xs font-bold tracking-[0.12em] text-[#1d7caf] uppercase mb-1.5">
+                    WHAT WE DELIVER
+                  </h3>
+                  <p className="text-xs text-slate-500 leading-relaxed">
+                    Complete safety solutions with precise, mess-free installation.
+                  </p>
                 </div>
-                <div className="w-12 h-12 bg-sky-50 rounded-xl flex items-center justify-center text-primary font-bold text-lg">
-                  ★ 4.9
+
+                <div>
+                  <h3 className="text-xs font-bold tracking-[0.12em] text-[#1d7caf] uppercase mb-1.5">
+                    HOW WE BUILD TRUST
+                  </h3>
+                  <p className="text-xs text-slate-500 leading-relaxed">
+                    Compliance-first work, branded materials, and dependable after-sales support.
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Content */}
-          <div className="lg:col-span-6 space-y-6">
-            <span className="text-xs font-bold text-primary tracking-widest uppercase bg-sky-50 px-3 py-1 rounded-full border border-sky-100">
-              About Us
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
-              Modern Safety, Installed with Care
-            </h2>
-            <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
-              ModerNet Pvt. Ltd. is Mumbai & Navi Mumbai&apos;s trusted safety solution company offering complete protection for residential balconies, windows, high-rises, and construction projects. We provide high-quality installation of Invisible Grills, Mosquito Nets, Motorized Mosquito Mesh (Zip Screens), Bird Nets, and Construction Safety Nets.
-            </p>
-            <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
-              Our core focus is on clean installation, branded materials, modern safety systems, and reliable after-sales service. We build long-term trust through professional execution and strict safety compliance.
-            </p>
-
-            {/* Directors Box */}
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-              <div>
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-wider">Company Directors</p>
-                <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 mt-1 text-sm font-semibold text-slate-900">
-                  <span className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-4 h-4 text-primary" /> Mr. Atul Adhav
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-4 h-4 text-primary" /> Mr. Satnam Singh Sagoo
-                  </span>
-                </div>
-              </div>
-              <Link
-                href="/about"
-                className="text-xs font-bold text-primary hover:text-primary-dark flex items-center gap-1 group"
-              >
-                Learn More About Us <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </div>
-
-            {/* Key Deliverables */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-              <div className="border-l-2 border-primary pl-4">
-                <h4 className="font-bold text-slate-900 text-sm">What We Deliver</h4>
-                <p className="text-xs text-slate-500 mt-1">Complete safety solutions with precise, mess-free installation.</p>
-              </div>
-              <div className="border-l-2 border-sky-400 pl-4">
-                <h4 className="font-bold text-slate-900 text-sm">How We Build Trust</h4>
-                <p className="text-xs text-slate-500 mt-1">Compliance-first work, branded materials, and dependable after-sales support.</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
