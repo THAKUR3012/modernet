@@ -135,28 +135,49 @@ export default function ServicesPage() {
 
   return (
     <div className="space-y-20 pb-20">
-      {/* 1. Services Header */}
-      <section className="bg-slate-950 text-white py-20 relative overflow-hidden">
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <span className="text-xs font-bold uppercase tracking-widest text-sky-400 bg-sky-950/80 px-4 py-1.5 rounded-full border border-sky-800">
-            Protective Solutions
+      {/* 1. Services Hero Header (matches uploaded_media_1790567570555.png) */}
+      <section className="relative min-h-[65vh] sm:min-h-[72vh] flex items-center justify-center bg-slate-950 text-white overflow-hidden pt-28 pb-16">
+        {/* Background Image: service-hero.jpg */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/img/service/service-hero.jpg"
+            alt="Services Built for Modern Living - ModerNet Invisible Grills and Netting"
+            fill
+            priority
+            className="object-cover object-center filter brightness-95"
+          />
+          {/* Subtle Dark Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/45 to-black/65" />
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Badge */}
+          <span className="inline-block px-4 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/40 text-blue-200 text-[11px] sm:text-xs font-semibold tracking-wider uppercase mb-6 backdrop-blur-sm shadow-sm">
+            PROTECTIVE SOLUTIONS
           </span>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white">
-            Services Built for Modern Living
+
+          {/* Heading in Playfair Serif */}
+          <h1 className="font-playfair text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.12] text-white mb-6 drop-shadow-md">
+            Services Built for Modern<br />
+            Living.
           </h1>
-          <p className="max-w-2xl mx-auto text-base sm:text-lg text-slate-300 font-light">
-            Premium materials, precision laser measurement, and spotless installation for every balcony, window, and open space.
+
+          {/* Subtitle */}
+          <p className="max-w-2xl mx-auto text-sm sm:text-base md:text-lg text-slate-100 font-normal leading-relaxed mb-8 drop-shadow">
+            Premium materials, precision measurement, and spotless installation for every balcony, window, and open space.
           </p>
-          <div className="pt-4 flex justify-center gap-4">
+
+          {/* Dual Action Buttons */}
+          <div className="flex flex-row items-center justify-center gap-4 flex-wrap">
             <button
-              onClick={() => openInspection("Invisible Grill Installation")}
-              className="bg-primary hover:bg-primary-dark text-white px-7 py-3 rounded-full text-sm font-semibold transition-all shadow-md cursor-pointer"
+              onClick={() => openInspection("All Protective Solutions")}
+              className="bg-[#1d7caf] hover:bg-[#166088] text-white font-medium px-7 sm:px-8 py-3 sm:py-3.5 rounded-full text-sm sm:text-base shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5 cursor-pointer"
             >
               Get Free Inspection
             </button>
             <Link
               href="/faq"
-              className="bg-white/10 hover:bg-white/20 text-white px-7 py-3 rounded-full text-sm font-semibold border border-white/20 transition-all"
+              className="border border-white/40 hover:border-white hover:bg-white/10 text-white font-medium px-7 sm:px-8 py-3 sm:py-3.5 rounded-full text-sm sm:text-base transition-all duration-200 transform hover:-translate-y-0.5 bg-black/25 backdrop-blur-sm shadow-md"
             >
               View FAQs
             </Link>

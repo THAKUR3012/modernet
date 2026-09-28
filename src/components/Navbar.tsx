@@ -61,10 +61,10 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`text-[15px] font-medium transition-colors relative py-1 ${
+                  className={`text-[15px] transition-colors relative py-1 ${
                     isActive
-                      ? "text-[#1d7caf] font-semibold border-b-2 border-[#1d7caf]"
-                      : "text-slate-800 hover:text-[#1d7caf]"
+                      ? "text-[#1d7caf] font-semibold"
+                      : "text-slate-800 hover:text-[#1d7caf] font-medium"
                   }`}
                 >
                   {link.name}
