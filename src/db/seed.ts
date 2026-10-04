@@ -7,9 +7,9 @@ async function seed() {
   // Seed Users
   await db.insert(users).values([
     {
-      name: "Admin ModerNet",
-      email: "admin@modernet.in",
-      password: "admin123", // In production hash with bcrypt
+      name: "Mr. Krishna",
+      email: "Msmartkrish.81089@gmail.com",
+      password: "password123",
       role: "super_admin",
       permissions: JSON.stringify([
         "leads:view",
@@ -22,30 +22,8 @@ async function seed() {
       ]),
       isActive: true,
     },
-    {
-      name: "Satnam Singh (Manager)",
-      email: "manager@modernet.in",
-      password: "manager123",
-      role: "sales_manager",
-      permissions: JSON.stringify([
-        "leads:view",
-        "leads:edit",
-        "leads:assign",
-        "quotes:manage",
-        "export:data",
-      ]),
-      isActive: true,
-    },
-    {
-      name: "Atul Adhav (Site Technician)",
-      email: "tech@modernet.in",
-      password: "tech123",
-      role: "technician",
-      permissions: JSON.stringify(["leads:view", "leads:edit"]),
-      isActive: true,
-    },
   ]).onDuplicateKeyUpdate({
-    set: { name: "Admin ModerNet" },
+    set: { name: "Mr. Krishna" },
   });
 
   // Seed Sample Inquiries
@@ -60,33 +38,33 @@ async function seed() {
       message: "Looking for 316 grade invisible grills for 2 large balconies facing the lake. High floor with kids at home.",
       status: "scheduled",
       preferredDate: "2026-10-02 (11:00 AM)",
-      assignedTo: "Atul Adhav (Site Technician)",
+      assignedTo: "Mr. Krishna",
       technicianNotes: "Site visit confirmed. Carry sample wires and catalog.",
     },
     {
       fullName: "Pooja Deshmukh",
       mobile: "9769012345",
       email: "pooja.d@yahoo.com",
-      address: "B-502, Seawoods Grand Central, Sector 40, Nerul, Navi Mumbai",
+      address: "Flat 402, Thakur Complex, Kandivali East, Mumbai",
       service: "Bird Nets",
       propertyType: "Residential",
       message: "Severe pigeon nuisance in AC duct area and kitchen balcony. Need durable net that doesn't block sunlight.",
       status: "contacted",
       preferredDate: "2026-10-03 (3:00 PM)",
-      assignedTo: "Satnam Singh (Manager)",
+      assignedTo: "Mr. Krishna",
       technicianNotes: "Called client. Quoted standard nylon netting rate.",
     },
     {
       fullName: "Vikram Malhotra",
       mobile: "9819554321",
       email: "v.malhotra@zenithinfra.com",
-      address: "Commercial Tower 4, MIDC Industrial Area, Mahape, Navi Mumbai",
+      address: "Commercial Tower, Andheri East, Mumbai",
       service: "Construction Safety Nets",
       propertyType: "Construction",
       message: "Need 25,000 sq ft debris and fall arrest safety nets for our new commercial project. Need certified ISI standard nets.",
       status: "in_review",
       preferredDate: "2026-10-05",
-      assignedTo: "Admin ModerNet",
+      assignedTo: "Mr. Krishna",
       technicianNotes: "Awaiting site floor plans.",
     },
     {

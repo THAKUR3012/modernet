@@ -95,7 +95,7 @@ export default function InspectionModal({
             </div>
             <div>
               <h3 className="font-bold text-lg leading-tight">Book Free Site Visit</h3>
-              <p className="text-xs text-sky-100">Zero charges • Free measurements • Mumbai & Navi Mumbai</p>
+              <p className="text-xs text-sky-100">Zero charges • Free measurements • 3 Years Free Repairing • Mumbai & Navi Mumbai</p>
             </div>
           </div>
           <button
@@ -121,7 +121,14 @@ export default function InspectionModal({
                 Thank you! Our safety technician will call you shortly to confirm your preferred timing and site address.
               </p>
               <div className="bg-sky-50 border border-sky-100 rounded-xl p-3 text-xs text-primary font-medium">
-                Need immediate urgent help? Call Mr. Atul Adhav at <strong>+91 97000 99235</strong>
+                Need immediate urgent help? Call Mr. Krishna at{" "}
+                <a href="tel:+919082754119" className="font-bold hover:underline">
+                  +91 9082754119
+                </a>{" "}
+                /{" "}
+                <a href="tel:+918692873408" className="font-bold hover:underline">
+                  +91 8692873408
+                </a>
               </div>
               <button
                 onClick={() => {

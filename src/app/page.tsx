@@ -120,32 +120,32 @@ export default function HomePage() {
     },
     {
       step: "04",
-      title: "Handover & Warranty",
-      desc: "Rigorous tension check, safety demonstration, and handover of your official 5-Year Warranty card.",
+      title: "Handover & 3-Yr Warranty",
+      desc: "Rigorous tension check, safety demonstration, and handover of your official 3-Year Free Repairing Service Warranty card.",
     },
   ];
 
   const reviews = [
     {
       name: "Sandeep Patil",
-      location: "Palm Beach Road, Belapur",
+      location: "Thakur Complex, Kandivali East",
       rating: 5,
       image: "/img/user/user-01.png",
-      text: "We installed ModerNet invisible grills for our 18th-floor balcony facing the creek. The view remains completely open and my 4-year-old child can safely play. Excellent work by Mr. Atul and team!",
+      text: "We installed Shri Krishna invisible grills for our balcony. The view remains completely unobstructed and our child can safely play. Excellent workmanship by Mr. Krishna and team!",
     },
     {
       name: "Pooja Deshmukh",
-      location: "Hiranandani Gardens, Powai",
+      location: "Evershine Nagar, Malad West",
       rating: 5,
       image: "/img/user/user-02.png",
-      text: "Pigeons had made our AC ledges and balcony impossible to use. ModerNet installed bird nets cleanly without drilling ugly holes. Very neat workmanship and reasonable pricing.",
+      text: "Pigeons had made our AC ledges and balcony impossible to use. Mr. Krishna installed durable nylon bird nets cleanly with 3 years free repairing service. Very neat work and reasonable pricing.",
     },
     {
       name: "Karan Mehta",
-      location: "Kharghar Valley Shilp",
+      location: "Lokhandwala, Andheri West",
       rating: 5,
       image: "/img/user/user-03.png",
-      text: "The motorized zip screen in our penthouse terrace is brilliant. Keeps mosquitoes away during evening tea and resists heavy monsoons. Highly recommended!",
+      text: "Prompt service, high quality SS316 marine-grade cables, and genuine 3-year warranty provided upon installation. Highly recommended for bird netting and invisible grills in Mumbai!",
     },
   ];
 
@@ -249,41 +249,41 @@ export default function HomePage() {
               </h2>
 
               <p className="text-slate-500 text-[15px] leading-relaxed">
-                ModerNet Pvt. Ltd. is a newly established company offering complete safety solutions for residential, commercial and construction requirements. We provide high-quality installation of Invisible Grills, Mosquito Nets, Motorized Mosquito Mesh (Zip Screens), Bird Nets and Construction Safety Nets.
+                Shri Krishna Invisible Grill &amp; Bird Net Company (ModerNet) is a premier provider of residential and commercial safety systems across Mumbai and Navi Mumbai. We specialize in SS316 Invisible Grills, All Bird Net Services, Nylon Net with Long Time Life, Mosquito Nets, and Heavy-duty Safety Nets.
               </p>
 
               <p className="text-slate-500 text-[15px] leading-relaxed">
-                Our focus is on clean installation, branded materials, modern safety systems and reliable service. We aim to build long-term trust through professional execution, safety compliance and after-sales support.
+                Backed by our official <strong>3-Year Free Repairing Service Guarantee</strong>, our team led by Mr. Krishna delivers clean, laser-aligned installation, branded marine-grade materials, and dependable long-term protection.
               </p>
 
-              {/* Company Directors */}
+              {/* Company Leadership & Contact */}
               <div className="pt-2">
                 <h3 className="text-xs font-bold tracking-[0.12em] text-[#1d7caf] uppercase mb-2">
-                  COMPANY DIRECTORS
+                  LEADERSHIP &amp; OPERATIONS
                 </h3>
-                <div className="grid grid-cols-2 gap-4 text-sm font-medium text-slate-700">
-                  <div>Mr. Atul Adhav</div>
-                  <div>Mr. Satnam Singh Sagoo</div>
+                <div className="bg-sky-50 border border-sky-100 p-3 rounded-xl max-w-md">
+                  <span className="text-sm font-bold text-sky-900 block">Mr. Krishna</span>
+                  <span className="text-xs text-slate-600">Proprietor &amp; Lead Specialist • Shri Krishna Invisible Grill &amp; Bird Net Company</span>
                 </div>
               </div>
 
-              {/* Highlights: What We Deliver & How We Build Trust */}
+              {/* Highlights: What We Deliver & 3 Years Free Repairing */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
                 <div>
                   <h3 className="text-xs font-bold tracking-[0.12em] text-[#1d7caf] uppercase mb-1.5">
-                    WHAT WE DELIVER
+                    3 YEARS FREE REPAIRING
                   </h3>
                   <p className="text-xs text-slate-500 leading-relaxed">
-                    Complete safety solutions with precise, mess-free installation.
+                    Zero-cost repairing and maintenance support for 3 full years on our installations.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-xs font-bold tracking-[0.12em] text-[#1d7caf] uppercase mb-1.5">
-                    HOW WE BUILD TRUST
+                    NYLON NET LONG TIME LIFE
                   </h3>
                   <p className="text-xs text-slate-500 leading-relaxed">
-                    Compliance-first work, branded materials, and dependable after-sales support.
+                    High-density UV-stabilized nylon netting engineered for extended lifespan.
                   </p>
                 </div>
               </div>
@@ -492,7 +492,7 @@ export default function HomePage() {
             What Homeowners Across Mumbai Say
           </h2>
           <p className="text-slate-600 text-sm">
-            Over 500+ happy families protected in Powai, Belapur, Vashi, Kharghar, Nerul, and Thane.
+            Over 500+ happy families protected across Kandivali, Borivali, Malad, Goregaon, Andheri, Powai, Thane, and Mumbai.
           </p>
         </div>
 
@@ -544,25 +544,33 @@ export default function HomePage() {
               </p>
 
               <div className="space-y-4 pt-2 text-sm text-slate-300">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
                     <Phone className="w-5 h-5 text-sky-400" />
                   </div>
                   <div>
-                    <p className="text-xs text-slate-400">Direct Helpline & WhatsApp:</p>
-                    <a href="tel:+919700099235" className="text-white font-bold hover:text-sky-300 text-base">
-                      +91 97000 99235
-                    </a>
+                    <p className="text-xs text-slate-400">Mr. Krishna (Direct &amp; WhatsApp):</p>
+                    <div className="flex flex-wrap items-center gap-3">
+                      <a href="tel:+919082754119" className="text-white font-bold hover:text-sky-300 text-base">
+                        +91 9082754119
+                      </a>
+                      <span className="text-slate-500">|</span>
+                      <a href="tel:+918692873408" className="text-white font-bold hover:text-sky-300 text-base">
+                        +91 8692873408
+                      </a>
+                    </div>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
                     <MapPin className="w-5 h-5 text-sky-400" />
                   </div>
                   <div>
-                    <p className="text-xs text-slate-400">Navi Mumbai Head Office:</p>
-                    <p className="text-xs text-slate-200">601, Pujit Plaza, Sector 11, Belapur, Navi Mumbai</p>
+                    <p className="text-xs text-slate-400">Office &amp; Workshop:</p>
+                    <p className="text-xs text-slate-200">
+                      Jai Ambika Bhawani Society, Hanuman Nagar, Akurli Road, Kandivali East, Mumbai - 400101
+                    </p>
                   </div>
                 </div>
               </div>

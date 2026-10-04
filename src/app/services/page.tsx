@@ -40,6 +40,7 @@ export default function ServicesPage() {
         "Child & pet anti-fall safety with zero compromise",
         "Compliant with fire safety evacuation standards (can be cut with wire cutters in emergencies)",
         "Premium Hilti anchoring with powder-coated aluminum tracks",
+        "Backed by our official 3 Years Free Repairing Service Guarantee",
       ],
     },
     {
@@ -80,19 +81,21 @@ export default function ServicesPage() {
     },
     {
       id: "detail-bird-netting",
-      title: "Anti-Bird & Pigeon Netting",
-      subtitle: "Effective & Harmless Protection for Balconies & Ducts",
+      title: "All Bird Net Service & Pigeon Netting",
+      subtitle: "Nylon Net Long Time Life — Balconies, Windows & Ducts",
       image: "/img/service/Bird-Nets-01.jpg",
-      badge: "Pigeon Proof",
-      useCase: "Balconies, AC compressor ledges, building shafts, ducts, industrial sheds.",
+      badge: "Nylon Net Long Time Life",
+      useCase: "Balconies, windows, AC compressor ledges, building shafts, ducts, industrial sheds.",
       installTime: "2 to 4 hours for residential balconies.",
       maintenance: "Zero maintenance. Does not absorb water or trap dust.",
-      specs: "UV-stabilized virgin HDPE / Copolymer nylon netting. Mesh size 25mm to 50mm, knotted construction with 30-40 kg breaking load per mesh.",
+      specs: "UV-stabilized virgin Nylon netting with long-time life. Mesh size 25mm to 50mm, knotted construction with 30-40 kg breaking load per mesh.",
       benefits: [
+        "All Bird Net Service for windows, balconies, ducts, and shafts",
+        "Nylon Net Long Time Life — superior weather & UV endurance",
+        "Free Repairing Service For 3 Years on all installations",
         "100% safe and humane — prevents pigeons without hurting them",
         "Completely transparent against the sky — invisible from distance",
-        "Stops pigeon droppings, bad odor, and respiratory health hazards",
-        "Weatherproof and UV-resistant for 5+ years without degrading",
+        "Stops pigeon droppings, foul odor, and respiratory health hazards",
         "Neat wire-rope perimeter tensioning with stainless steel hooks",
       ],
     },
@@ -282,10 +285,10 @@ export default function ServicesPage() {
                       </button>
 
                       <a
-                        href="tel:+919700099235"
+                        href="tel:+919082754119"
                         className="text-xs font-semibold text-slate-700 hover:text-primary flex items-center gap-1.5"
                       >
-                        <Phone className="w-3.5 h-3.5 text-primary" /> Speak with Engineer
+                        <Phone className="w-3.5 h-3.5 text-primary" /> Call Mr. Krishna: +91 9082754119
                       </a>
                     </div>
 

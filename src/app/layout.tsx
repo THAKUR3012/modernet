@@ -18,28 +18,35 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "ModerNet | Invisible Grills & Bird Netting in Mumbai & Navi Mumbai",
+  title: "Shri Krishna Invisible Grill & Bird Net Company | Mumbai & Navi Mumbai",
   description:
-    "ModerNet offers premium invisible grills, motorized mosquito mesh, and bird netting solutions in Mumbai & Navi Mumbai. Safe, durable, and unobstructed views for modern homes.",
+    "Shri Krishna Invisible Grill & Bird Net Company offers premium SS316 invisible grills, all bird net services with long time life nylon nets, and 3 Years Free Repairing Service across Mumbai & Navi Mumbai.",
   keywords: [
+    "Shri Krishna Invisible Grill",
+    "Shri Krishna Invigival Grill & Bird Net Company",
+    "Mr Krishna",
     "Invisible Grills Mumbai",
+    "All Bird Net Service",
+    "Nylon Net Long Time Life",
+    "Kandivali East",
+    "Akurli Road",
+    "Hanuman Nagar",
     "Invisible Grills Navi Mumbai",
     "Bird Netting Mumbai",
     "Pigeon Net for Balcony",
     "Mosquito Mesh",
     "Motorized Zip Screen",
     "Construction Safety Nets",
-    "ModerNet",
-    "Belapur",
-    "Mahape",
+    "Borivali",
+    "Malad",
   ],
   icons: {
     icon: "/img/modernet_logo1.jpeg",
   },
   openGraph: {
-    title: "ModerNet | Invisible Grills & Bird Netting in Mumbai & Navi Mumbai",
+    title: "Shri Krishna Invisible Grill & Bird Net Company | Mumbai & Navi Mumbai",
     description:
-      "Modern invisible safety grills, mosquito nets, and anti-bird netting for high-rise residential & commercial properties in Mumbai.",
+      "Modern invisible safety grills, all bird netting services with long life nylon nets, and 3-Year Free Repairing Service across Mumbai & Navi Mumbai.",
     url: "https://www.modernet.in/",
     siteName: "ModerNet",
     images: [

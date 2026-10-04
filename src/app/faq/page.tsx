@@ -61,9 +61,14 @@ const faqs: FAQItem[] = [
       "Yes. The cables can be cut quickly in an emergency, unlike traditional iron grills.",
   },
   {
-    question: "Do you provide maintenance or warranty?",
+    question: "Do you provide maintenance, repairing, or warranty?",
     answer:
-      "We provide maintenance support and a service warranty depending on the project scope. Ask our team for exact coverage.",
+      "Yes! We provide Free Repairing Service For 3 Years on our installations. Our bird nets feature high-durability Nylon Net with Long Time Life and our invisible grills use marine-grade SS316 cables.",
+  },
+  {
+    question: "Bird Nets: How durable is your nylon net?",
+    answer:
+      "We provide premium Nylon Net with Long Time Life. Our netting is UV-stabilized, high-tensile, 100% weather-resistant, and backed by our 3-Year Free Repairing Service.",
   },
   {
     question: "Will installation damage my balcony?",
@@ -290,10 +295,10 @@ export default function FAQPage() {
                   Book Inspection
                 </button>
                 <a
-                  href="tel:+919700099235"
+                  href="tel:+919082754119"
                   className="border-2 border-[#1d7caf] text-[#1d7caf] hover:bg-[#1d7caf] hover:text-white font-medium px-7 sm:px-8 py-3 rounded-full text-sm sm:text-base transition-all duration-200 flex items-center gap-2"
                 >
-                  <Phone className="w-4 h-4" /> Call Now
+                  <Phone className="w-4 h-4" /> Call Mr. Krishna
                 </a>
               </div>
             </div>

@@ -107,25 +107,21 @@ export default function AboutPage() {
               </h2>
 
               <p className="text-slate-500 text-[15px] leading-relaxed">
-                ModerNet Pvt. Ltd. provides complete safety solutions for residential, commercial and construction
-                requirements. We specialize in Invisible Grills, Mosquito Nets, Motorized Mosquito Mesh (Zip
-                Screens), Bird Nets and Construction Safety Nets.
+                Shri Krishna Invisible Grill &amp; Bird Net Company (ModerNet) provides complete safety solutions for residential, commercial and high-rise apartment requirements across Mumbai &amp; Navi Mumbai. We specialize in SS316 Invisible Grills, All Bird Net Services, Nylon Net with Long Time Life, Mosquito Screens, and Heavy-duty Safety Nets.
               </p>
 
               <p className="text-slate-500 text-[15px] leading-relaxed">
-                Our focus is on clean installation, branded materials, modern safety systems and dependable
-                after-sales support. We aim to build long-term trust through professional execution and safety
-                compliance.
+                Our operations, headed by <strong>Mr. Krishna</strong>, prioritize customer satisfaction, superior tensile materials, and dependable post-installation support — highlighted by our official <strong>3-Year Free Repairing Service Guarantee</strong>.
               </p>
 
-              {/* Company Directors */}
+              {/* Company Leadership */}
               <div className="pt-2">
                 <h3 className="text-xs font-bold tracking-[0.12em] text-[#1d7caf] uppercase mb-2">
-                  COMPANY DIRECTORS
+                  KEY OPERATIONS &amp; MANAGEMENT
                 </h3>
-                <div className="grid grid-cols-2 gap-4 text-sm font-medium text-slate-700">
-                  <div>Mr. Atul Adhav</div>
-                  <div>Mr. Satnam Singh Sagoo</div>
+                <div className="bg-white border border-slate-200/80 p-3.5 rounded-xl shadow-xs max-w-md">
+                  <span className="font-bold text-slate-900 block text-sm">Mr. Krishna</span>
+                  <span className="text-xs text-slate-500">Proprietor &amp; Lead Specialist • Shri Krishna Invisible Grill &amp; Bird Net Company</span>
                 </div>
               </div>
 
@@ -133,19 +129,19 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
                 <div>
                   <h3 className="text-xs font-bold tracking-[0.12em] text-[#1d7caf] uppercase mb-1.5">
-                    OUR PROMISE
+                    3 YEARS FREE REPAIRING
                   </h3>
                   <p className="text-xs text-slate-500 leading-relaxed">
-                    Transparent pricing, precise measurements, and neat finishing for every project.
+                    Zero-cost repairing and maintenance warranty for 3 years on every installation.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-xs font-bold tracking-[0.12em] text-[#1d7caf] uppercase mb-1.5">
-                    OUR COVERAGE
+                    NYLON NET LONG TIME LIFE
                   </h3>
                   <p className="text-xs text-slate-500 leading-relaxed">
-                    Dedicated installation teams across Mumbai and Navi Mumbai for fast response times.
+                    UV-stabilized, weather-tested high-tensile nylon netting for long-lasting protection.
                   </p>
                 </div>
               </div>

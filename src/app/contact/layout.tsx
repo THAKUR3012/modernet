@@ -1,28 +1,28 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ModerNet | Contact Us",
+  title: "Contact Mr. Krishna | Shri Krishna Invisible Grill & Bird Net Company",
   description:
-    "Book your free site inspection with ModerNet safety experts. Invisible grills, bird nets, and mosquito screens across Mumbai & Navi Mumbai.",
+    "Contact Mr. Krishna at Shri Krishna Invisible Grill & Bird Net Company. Kandivali East, Mumbai. Call +91 9082754119 / +91 8692873408 for free site inspection & 3 Years Free Repairing Service.",
   openGraph: {
-    title: "ModerNet | Contact Us",
+    title: "Contact Mr. Krishna | Shri Krishna Invisible Grill & Bird Net Company",
     description:
-      "Book your free site inspection with ModerNet safety experts. Invisible grills, bird nets, and mosquito screens across Mumbai & Navi Mumbai.",
+      "Contact Mr. Krishna at Shri Krishna Invisible Grill & Bird Net Company. Kandivali East, Mumbai. Free site inspection & 3 Years Free Repairing Service.",
     url: "https://www.modernet.in/contact.html",
     images: [
       {
         url: "/img/Birdnetting/Image-07.jpg",
         width: 1200,
         height: 630,
-        alt: "Book Free Inspection - ModerNet",
+        alt: "Book Free Inspection - Shri Krishna Invisible Grill",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ModerNet | Contact Us",
+    title: "Contact Mr. Krishna | Shri Krishna Invisible Grill & Bird Net Company",
     description:
-      "Book your free site inspection with ModerNet safety experts. Invisible grills, bird nets, and mosquito screens across Mumbai & Navi Mumbai.",
+      "Contact Mr. Krishna at Shri Krishna Invisible Grill & Bird Net Company. Kandivali East, Mumbai. Call +91 9082754119 / +91 8692873408.",
     images: ["/img/Birdnetting/Image-07.jpg"],
   },
 };

@@ -8,7 +8,6 @@ import {
   Clock,
   MessageCircle,
   Building2,
-  Factory,
 } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 
@@ -50,10 +49,10 @@ export default function ContactPage() {
           {/* Dual Action Buttons */}
           <div className="flex flex-row items-center justify-center gap-4 flex-wrap">
             <a
-              href="tel:+919700099235"
+              href="tel:+919082754119"
               className="bg-[#1d7caf] hover:bg-[#166088] text-white font-medium px-8 py-3.5 rounded-full text-sm sm:text-base shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5 cursor-pointer"
             >
-              Call Now
+              Call Mr. Krishna
             </a>
             <Link
               href="/services"
@@ -79,61 +78,113 @@ export default function ContactPage() {
                 We Are Here to Protect Your Home
               </h2>
               <p className="text-slate-600 text-sm mt-2">
-                Drop by our corporate office in Belapur, visit our Mahape fabrication facility, or call us to schedule an on-site visit today.
+                Connect directly with Mr. Krishna for expert consultations, free measurement visits, and itemized quotations across Mumbai and Navi Mumbai.
               </p>
             </div>
 
             {/* Direct Phone / WhatsApp Card */}
             <div className="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200/80 rounded-3xl p-6 space-y-3">
-              <h3 className="font-bold text-slate-900 text-base flex items-center gap-2">
-                <Phone className="w-5 h-5 text-primary" /> Direct Hotline & WhatsApp
-              </h3>
+              <div className="flex items-center justify-between">
+                <h3 className="font-bold text-slate-900 text-base flex items-center gap-2">
+                  <Phone className="w-5 h-5 text-primary" /> Direct Hotline & WhatsApp
+                </h3>
+                <span className="text-[11px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full">
+                  Mr. Krishna
+                </span>
+              </div>
               <p className="text-xs text-slate-600">
                 Available Monday to Sunday (8:00 AM – 8:00 PM) for bookings and inquiries.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 pt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2">
                 <a
-                  href="tel:+919700099235"
-                  className="bg-primary hover:bg-primary-dark text-white text-xs font-semibold py-2.5 px-4 rounded-xl text-center shadow-sm transition-all"
+                  href="tel:+919082754119"
+                  className="bg-primary hover:bg-primary-dark text-white text-xs font-semibold py-2.5 px-3 rounded-xl text-center shadow-sm transition-all"
                 >
-                  Call +91 97000 99235
+                  Call +91 9082754119
                 </a>
                 <a
-                  href="https://wa.me/919700099235?text=Hello%20ModerNet%20Team%2C%20I%20would%20like%20to%20book%20a%20free%20site%20visit."
+                  href="tel:+918692873408"
+                  className="bg-slate-800 hover:bg-slate-900 text-white text-xs font-semibold py-2.5 px-3 rounded-xl text-center shadow-sm transition-all"
+                >
+                  Call +91 8692873408
+                </a>
+              </div>
+              <div className="pt-1">
+                <a
+                  href="https://wa.me/919082754119?text=Hello%20Mr.%20Krishna%2C%20I%20would%20like%20to%20book%20a%20free%20site%20visit%20for%20safety%20nets%20/%20invisible%20grills."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold py-2.5 px-4 rounded-xl text-center shadow-sm transition-all flex items-center justify-center gap-1.5"
+                  className="w-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold py-2.5 px-4 rounded-xl text-center shadow-sm transition-all flex items-center justify-center gap-1.5"
                 >
-                  <MessageCircle className="w-4 h-4" /> WhatsApp Chat
+                  <MessageCircle className="w-4 h-4" /> WhatsApp Chat (+91 9082754119)
                 </a>
               </div>
             </div>
 
-            {/* Belapur Office Card */}
-            <div className="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm space-y-2">
-              <div className="flex items-center gap-2 text-primary font-bold text-sm">
-                <Building2 className="w-4 h-4" /> Belapur Corporate Office
+            {/* Kandivali East Office Card */}
+            <div className="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm space-y-2.5">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2 text-primary font-bold text-sm">
+                  <Building2 className="w-4 h-4" /> Kandivali East Office & Works
+                </div>
+                <span className="text-[10px] uppercase font-bold tracking-wider text-sky-700 bg-sky-50 px-2 py-0.5 rounded border border-sky-100">
+                  Head Office
+                </span>
               </div>
-              <p className="text-xs font-semibold text-slate-800">ModerNet Pvt. Ltd.</p>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                601, Pujit Plaza, Plot No. 67, Sector 11, Opposite K Star Hotel, Belapur, Navi Mumbai, Maharashtra 400614
+              <p className="text-xs font-bold text-slate-800">
+                Shri Krishna Invisible Grill &amp; Bird Net Company
               </p>
-              <div className="pt-2 text-xs text-slate-500">
-                Email: <a href="mailto:info@modernet.in" className="text-primary hover:underline">info@modernet.in</a>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Jai Ambika Bhawani Society, Hanuman Nagar, Akurli Road, Kandivali East, Mumbai, Maharashtra 400101
+              </p>
+              <div className="pt-1 text-xs text-slate-500 space-y-1">
+                <p>
+                  Contact Person: <strong className="text-slate-700">Mr. Krishna</strong>
+                </p>
+                <p>
+                  Email:{" "}
+                  <a href="mailto:Msmartkrish.81089@gmail.com" className="text-primary font-medium hover:underline">
+                    Msmartkrish.81089@gmail.com
+                  </a>
+                </p>
               </div>
             </div>
 
-            {/* Mahape Factory Card */}
-            <div className="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm space-y-2">
-              <div className="flex items-center gap-2 text-emerald-600 font-bold text-sm">
-                <Factory className="w-4 h-4" /> Manufacturing & Assembly Unit
+            {/* 3 Years Free Repairing Service Banner */}
+            <div className="bg-gradient-to-br from-red-500/10 via-amber-500/10 to-emerald-500/10 border border-amber-200 rounded-3xl p-5 space-y-2">
+              <div className="flex items-center gap-2">
+                <span className="bg-red-600 text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                  Guaranteed Offer
+                </span>
+                <span className="text-xs font-bold text-slate-900">
+                  Free Repairing Service For 3 Years
+                </span>
               </div>
-              <p className="text-xs font-semibold text-slate-800">ModerNet Works</p>
               <p className="text-xs text-slate-600 leading-relaxed">
-                PAP-A254/255, MIDC Industrial Area, Mahape, Navi Mumbai, Maharashtra 400710
+                Every installation is backed by our official 3-Year Free Repairing Service. We use high-durability Nylon Nets with Long Time Life and genuine SS316 Marine Grade Invisible Grills.
               </p>
-              <div className="pt-2 text-xs text-slate-500">
-                Direct Contact: <a href="mailto:atuladhav007@gmail.com" className="text-primary hover:underline">atuladhav007@gmail.com</a>
+              <div className="flex flex-wrap gap-2 pt-1 text-[11px] font-medium text-slate-700">
+                <span className="bg-white/80 border border-slate-200 px-2 py-0.5 rounded-md">✓ All Bird Net Service</span>
+                <span className="bg-white/80 border border-slate-200 px-2 py-0.5 rounded-md">✓ Nylon Net Long Time Life</span>
+                <span className="bg-white/80 border border-slate-200 px-2 py-0.5 rounded-md">✓ SS316 Invisible Grills</span>
+              </div>
+            </div>
+
+            {/* Official Visiting Card Preview */}
+            <div className="bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3">
+              <div className="flex items-center justify-between">
+                <h4 className="text-xs font-bold uppercase tracking-wider text-slate-700">
+                  Official Visiting Card
+                </h4>
+                <span className="text-[11px] text-slate-500">Verified Business</span>
+              </div>
+              <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-slate-200 shadow-inner bg-slate-50">
+                <Image
+                  src="/img/business_card.png"
+                  alt="Shri Krishna Invisible Grill & Bird Net Company - Mr. Krishna Visiting Card"
+                  fill
+                  className="object-contain"
+                />
               </div>
             </div>
 
@@ -170,11 +221,11 @@ export default function ContactPage() {
         <div className="bg-white rounded-3xl border border-slate-200 shadow-md overflow-hidden">
           <div className="p-6 bg-slate-900 text-white flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <div>
-              <h3 className="text-lg font-bold">Visit Our Belapur Office</h3>
-              <p className="text-xs text-slate-400">Pujit Plaza, Sector 11, CBD Belapur, Navi Mumbai</p>
+              <h3 className="text-lg font-bold">Visit Our Kandivali East Office</h3>
+              <p className="text-xs text-slate-400">Jai Ambika Bhawani Society, Hanuman Nagar, Akurli Road, Kandivali East, Mumbai - 400101</p>
             </div>
             <a
-              href="https://maps.google.com/?q=Pujit+Plaza+CBD+Belapur+Navi+Mumbai"
+              href="https://maps.google.com/?q=Jai+Ambika+Bhawani+Society+Hanuman+Nagar+Akurli+Road+Kandivali+East+Mumbai+400101"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary hover:bg-primary-dark text-white text-xs font-semibold px-4 py-2 rounded-lg transition-colors"
@@ -184,14 +235,14 @@ export default function ContactPage() {
           </div>
           <div className="w-full h-80 bg-slate-100 relative">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.7456722026117!2d73.03606777610167!3d19.03091998216345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3bf88a44b79%3A0xe5a3636ea6f0a6d0!2sPujit%20Plaza!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              src="https://maps.google.com/maps?q=Jai+Ambika+Bhawani+Society,+Hanuman+Nagar,+Akurli+Road,+Kandivali+East,+Mumbai+400101&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen={false}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="ModerNet Belapur Office Map"
+              title="Shri Krishna Invisible Grill Kandivali East Office Map"
             ></iframe>
           </div>
         </div>
