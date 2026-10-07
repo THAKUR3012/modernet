@@ -1,29 +1,35 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ModerNet | Our Services",
+  title: "Invisible Grills & Bird Net Services | Shri Krishna Invisible Grill",
   description:
-    "Explore our complete range of safety solutions: Invisible Grills, Mosquito Nets, Motorized Zip Screens, Bird Netting, and Construction Safety Nets in Mumbai & Navi Mumbai.",
+    "Explore our protective solutions: SS316 Marine-Grade Invisible Grills, All Bird Net Service with Nylon Net Long Time Life, 3 Years Free Repairing Service, Mosquito Screens, and Fall Protection in Mumbai. Call Mr. Krishna: +91 9082754119.",
+  alternates: {
+    canonical: "/services",
+  },
   openGraph: {
-    title: "ModerNet | Our Services",
+    title: "Invisible Grills & All Bird Net Services | Shri Krishna Invisible Grill Mumbai",
     description:
-      "Explore our complete range of safety solutions: Invisible Grills, Mosquito Nets, Motorized Zip Screens, Bird Netting, and Construction Safety Nets in Mumbai & Navi Mumbai.",
-    url: "https://www.modernet.in/services.html",
+      "SS316 Stainless Steel Invisible Grills, Long Time Life Nylon Bird Nets, and 3 Years Free Repairing Service across Mumbai & Navi Mumbai. Book a free site visit.",
+    url: "https://www.modernet.in/services",
+    siteName: "Shri Krishna Invisible Grill & Bird Net Company",
     images: [
       {
-        url: "/img/service/service-hero.jpg",
+        url: "/img/service/Invisible-Grill.jpg",
         width: 1200,
         height: 630,
-        alt: "ModerNet Protective Solutions",
+        alt: "Shri Krishna Invisible Grills and Bird Net Services Mumbai",
       },
     ],
+    locale: "en_IN",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ModerNet | Our Services",
+    title: "Invisible Grills & Bird Net Services | Shri Krishna Invisible Grill",
     description:
-      "Explore our complete range of safety solutions: Invisible Grills, Mosquito Nets, Motorized Zip Screens, Bird Netting, and Construction Safety Nets in Mumbai & Navi Mumbai.",
-    images: ["/img/service/service-hero.jpg"],
+      "SS316 Invisible Grills & Long Time Life Nylon Bird Nets with 3-Year Free Repairing Service in Mumbai. Call +91 9082754119.",
+    images: ["/img/service/Invisible-Grill.jpg"],
   },
 };
 

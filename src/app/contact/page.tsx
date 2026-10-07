@@ -150,44 +150,6 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* 3 Years Free Repairing Service Banner */}
-            <div className="bg-gradient-to-br from-red-500/10 via-amber-500/10 to-emerald-500/10 border border-amber-200 rounded-3xl p-5 space-y-2">
-              <div className="flex items-center gap-2">
-                <span className="bg-red-600 text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
-                  Guaranteed Offer
-                </span>
-                <span className="text-xs font-bold text-slate-900">
-                  Free Repairing Service For 3 Years
-                </span>
-              </div>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Every installation is backed by our official 3-Year Free Repairing Service. We use high-durability Nylon Nets with Long Time Life and genuine SS316 Marine Grade Invisible Grills.
-              </p>
-              <div className="flex flex-wrap gap-2 pt-1 text-[11px] font-medium text-slate-700">
-                <span className="bg-white/80 border border-slate-200 px-2 py-0.5 rounded-md">✓ All Bird Net Service</span>
-                <span className="bg-white/80 border border-slate-200 px-2 py-0.5 rounded-md">✓ Nylon Net Long Time Life</span>
-                <span className="bg-white/80 border border-slate-200 px-2 py-0.5 rounded-md">✓ SS316 Invisible Grills</span>
-              </div>
-            </div>
-
-            {/* Official Visiting Card Preview */}
-            <div className="bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3">
-              <div className="flex items-center justify-between">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-slate-700">
-                  Official Visiting Card
-                </h4>
-                <span className="text-[11px] text-slate-500">Verified Business</span>
-              </div>
-              <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-slate-200 shadow-inner bg-slate-50">
-                <Image
-                  src="/img/business_card.png"
-                  alt="Shri Krishna Invisible Grill & Bird Net Company - Mr. Krishna Visiting Card"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-
             {/* Operating Hours */}
             <div className="flex items-center gap-3 text-xs text-slate-500 bg-slate-50 p-4 rounded-2xl border border-slate-200">
               <Clock className="w-4 h-4 text-primary shrink-0" />
