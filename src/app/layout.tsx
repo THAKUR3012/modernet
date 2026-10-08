@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/img/modernet_logo1.jpeg",
+    icon: "/img/logo.png",
   },
   openGraph: {
     title: "Shri Krishna Invisible Grill & Bird Net Company | Mumbai",
@@ -108,7 +108,7 @@ const localBusinessSchema = {
   description:
     "Leading invisible safety grill and bird netting installation service in Mumbai. Providing SS316 marine-grade invisible grills, all bird net services with long time life nylon nets, and 3 Years Free Repairing Service guarantee.",
   url: "https://www.modernet.in",
-  logo: "https://www.modernet.in/img/business_card.png",
+  logo: "https://www.modernet.in/img/logo.png",
   image: "https://www.modernet.in/img/business_card.png",
   telephone: "+919082754119",
   email: "Msmartkrish.81089@gmail.com",

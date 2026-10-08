@@ -42,10 +42,10 @@ export default function Navbar() {
         >
           {/* Brand Logo */}
           <Link href="/" className="flex items-center shrink-0">
-            <div className="relative h-8 sm:h-9 w-32 sm:w-36">
+            <div className="relative h-9 sm:h-11 w-40 sm:w-48">
               <Image
-                src="/img/modernet_logo1.jpeg"
-                alt="ModerNet"
+                src="/img/logo.png"
+                alt="Shri Krishna Invisible Grill & Bird Net Company"
                 fill
                 priority
                 className="object-contain object-left"
